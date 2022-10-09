@@ -4,6 +4,6 @@ To see the live code for type-along sessions, follow these links:
 
 - Organisation:
 
-- Automation:
+- Automation: 
 
-- Literate programming:
+- Literate programming: [my-awesome-report.Rmd](documents/my-awesome-report.Rmd)
