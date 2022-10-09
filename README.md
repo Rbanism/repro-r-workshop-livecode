@@ -1,4 +1,4 @@
-# Files and folder structure for the Reproducibilty and Automation with R for Urbanists workshop
+# Live code repository for the Reproducibilty and Automation with R for Urbanists workshop
 
 -   `data/gapminder_5060.csv`, `data/gapminder_7080.csv`, `data/gapminder_90plus.csv`: demo Gapminder data used in the introduction
 -   `data/gapminderDataFiveYear.tsv`: the cleaned and subset version of the Gapminder dataset available from the [gapminder R package](http://github.com/jennybc/gapminder).
