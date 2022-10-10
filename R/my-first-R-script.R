@@ -64,3 +64,11 @@ plot_1950 +
 plot_1950 +
   geom_col(position = position_dodge())
 
+
+plot_2035 <- df_grouped_2035 |>
+  ggplot(aes(x = city_size,
+             y = average_perc_population_in_city,
+             fill = continent))
+
+plot_2035 +
+  geom_col(position = position_dodge())
