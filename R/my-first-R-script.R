@@ -22,5 +22,16 @@ df_europe <- df |>
   select(continent, country, year, city_size, population_in_cities, percentage_of_population)
 
 df_newcol <- df |>
-  mutate(population_in_1000 = population_in_cities / 1000)
+  mutate(population_in_1000 = population_in_cities / 1000) |>
+  mutate(data_type = case_when(
+    year < 2020 ~ "true data",
+    year >= 2020 ~ "prediction")
+  )
+
+df_newcol <- df |>
+  mutate(population_in_1000 = population_in_cities / 1000,
+         data_type = case_when(
+           year < 2020 ~ "true data",
+           year >= 2020 ~ "prediction")
+         )
 
