@@ -13,6 +13,6 @@ df <- read_csv(data_path,
 
 ##### MANIPULATE DATA #####
 df_europe <- filter(df, continent == "EUROPE")
-
+df_europe <- select(df_europe, continent, country, year, city_size, population_in_cities)
 
 
