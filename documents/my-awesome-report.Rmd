@@ -79,5 +79,5 @@ mean_continent <- gapMinder |>
 mean_continent
 ```
 
-The average life expectancy in `r cont` is `r mean_continent$mean_lifeExp`
+The average life expectancy in `r cont` is `r round(mean_continent$mean_lifeExp, 2)`
 
