@@ -78,10 +78,15 @@ plot_2035 +
 
 ##### Yet another pretty picture #####
 df |>
+  mutate(
+    city_size = fct_relevel(city_size, 
+                            c("small", "medium", "large", "very large"))
+  ) |>
   ggplot(aes(x = year,
              y = percentage_of_population,
              color = city_size)) +
-  geom_jitter(alpha = 0.3)
+  geom_jitter(alpha = 0.3) +
+  facet_wrap("continent", ncol=3)
 
 
 
