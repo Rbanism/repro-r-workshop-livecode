@@ -1,3 +1,26 @@
 ---
-
+title: "My awesome report"
+author: "Claudiu Forgaci"
+output: html_document
 ---
+
+# Heading
+
+## Sub-heading
+
+Text...
+
+### Sub-heading
+
+Text...
+
+# Introduction
+
+This paper uses the **tidyverse** package along with the *gapminder* dataset, which contains the columns:
+
+-   country
+-   year
+-   pop
+-   continent
+-   lifeExp
+-   gdpPercap
