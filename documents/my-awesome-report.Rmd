@@ -19,8 +19,14 @@ Text...
 This paper uses the **tidyverse** package along with the *gapminder* dataset, which contains the columns:
 
 -   country
+    -   Name of country
 -   year
+    -   Year of observation
 -   pop
+    -   Population of country
 -   continent
+    -   Continent where the country is located
 -   lifeExp
+    -   Life expectancy
 -   gdpPercap
+    -   GDP per capita
