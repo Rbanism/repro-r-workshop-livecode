@@ -90,7 +90,13 @@ df |>
   scale_color_viridis(discrete=TRUE, direction=-1) +
   geom_jitter(alpha = 0.1) +
   geom_smooth(method="glm") +
-  facet_wrap("continent", ncol=3)
+  facet_wrap("continent", ncol=3) +
+  labs(
+    title = "Change in city-dwelling populations on different continents",
+    y = "Percentage of population living in cities",
+    color = "Size of cities"
+  ) +
+  theme_minimal()
 
 
 
