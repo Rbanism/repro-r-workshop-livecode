@@ -78,6 +78,7 @@ plot_2035 +
 
 ##### Yet another pretty picture #####
 library(viridis)
+
 df |>
   mutate(
     city_size = fct_relevel(city_size, 
