@@ -15,4 +15,12 @@ df <- read_csv(data_path,
 df_europe <- filter(df, continent == "EUROPE")
 df_europe <- select(df_europe, continent, country, year, city_size, population_in_cities)
 
+# old pipe: %>%
+
+df_europe <- df |>
+  filter(continent=="EUROPE") |>
+  select(continent, country, year, city_size, population_in_cities, percentage_of_population)
+
+df_newcol <- df |>
+  mutate(population_in_1000 = population_in_cities / 1000)
 
