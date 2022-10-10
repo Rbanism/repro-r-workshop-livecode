@@ -481,8 +481,13 @@ gapMinder &lt;- read.delim(path)</code></pre>
 mean_continent &lt;- gapMinder |&gt; 
   group_by(continent) |&gt; 
   summarise(mean_lifeExp = mean(lifeExp)) |&gt; 
-  filter(continent == cont)</code></pre>
-<p>The average life expectancy in Europe is Europe, 71.9036861</p>
+  filter(continent == cont)
+mean_continent</code></pre>
+<pre><code>## # A tibble: 1 × 2
+##   continent mean_lifeExp
+##   &lt;chr&gt;            &lt;dbl&gt;
+## 1 Europe            71.9</code></pre>
+<p>The average life expectancy in Europe is 71.9036861</p>
 </div>
 </div>
 
