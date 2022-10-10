@@ -55,7 +55,8 @@ df_grouped_1950 |>
   ggplot(aes(x = city_size,
              y = average_perc_population_in_city,
              fill = continent)) +
-  geom_bar(stat="identity")
+  geom_bar(stat="identity",
+           position = position_dodge())
 
 
 
