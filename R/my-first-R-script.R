@@ -50,3 +50,8 @@ df_grouped_2035 <- df |>
   summarise(average_perc_population_in_city = mean(percentage_of_population))
 
 
+###### PRETTY PICTURES ######
+
+
+
+
