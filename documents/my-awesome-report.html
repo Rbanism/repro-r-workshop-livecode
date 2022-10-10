@@ -440,15 +440,40 @@ gapMinder &lt;- read.delim(path)</code></pre>
 <p>The average GDP per capita grouped by <code>continent</code>.</p>
 <pre class="r"><code>gapMinder |&gt; 
   group_by(continent) |&gt; 
-  summarise(mean_gdpPercap = mean(gdpPercap))</code></pre>
-<pre><code>## # A tibble: 5 × 2
-##   continent mean_gdpPercap
-##   &lt;chr&gt;              &lt;dbl&gt;
-## 1 Africa             2194.
-## 2 Americas           7136.
-## 3 Asia               7902.
-## 4 Europe            14469.
-## 5 Oceania           18622.</code></pre>
+  summarise(mean_gdpPercap = mean(gdpPercap)) |&gt; 
+  knitr::kable(caption = &quot;We can also add a caption&quot;,
+               col.names = c(&quot;Continent&quot;, &quot;Mean GDP per Capita&quot;))</code></pre>
+<table>
+<caption>We can also add a caption</caption>
+<thead>
+<tr class="header">
+<th align="left">Continent</th>
+<th align="right">Mean GDP per Capita</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Africa</td>
+<td align="right">2193.755</td>
+</tr>
+<tr class="even">
+<td align="left">Americas</td>
+<td align="right">7136.110</td>
+</tr>
+<tr class="odd">
+<td align="left">Asia</td>
+<td align="right">7902.150</td>
+</tr>
+<tr class="even">
+<td align="left">Europe</td>
+<td align="right">14469.476</td>
+</tr>
+<tr class="odd">
+<td align="left">Oceania</td>
+<td align="right">18621.609</td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 
