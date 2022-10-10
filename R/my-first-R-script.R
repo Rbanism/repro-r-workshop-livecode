@@ -8,3 +8,5 @@ library(here)
 ####### LOADING DATA ####
 data_path <- here("data","urban_population.csv")
 
+df read_csv("data/urban_population.csv", 
+         col_types = cols(code = col_character()))
