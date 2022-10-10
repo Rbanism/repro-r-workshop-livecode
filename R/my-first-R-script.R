@@ -86,7 +86,8 @@ df |>
   ) |>
   ggplot(aes(x = year,
              y = percentage_of_population,
-             color = city_size)) +
+             color=city_size)) +
+  scale_color_viridis(discrete=TRUE, direction=-1) +
   geom_jitter(alpha = 0.3) +
   facet_wrap("continent", ncol=3)
 
