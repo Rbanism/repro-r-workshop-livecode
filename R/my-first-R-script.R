@@ -54,14 +54,13 @@ df_grouped_2035 <- df |>
 plot <- df_grouped_1950 |>
   ggplot(aes(x = city_size,
              y = average_perc_population_in_city,
-             fill = continent)) +
+             fill = continent))
+
+plot +
   geom_bar(stat="identity",
            position = position_dodge())
 
 
-df_grouped_1950 |>
-  ggplot(aes(x = city_size,
-             y = average_perc_population_in_city,
-             fill = continent)) +
+plot +
   geom_col(position = position_dodge())
 
