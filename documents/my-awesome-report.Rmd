@@ -88,7 +88,7 @@ continents <- factor(gapMinder$continent)
 plot(continents)
 ```
 
-```{r}
+```{r echo=FALSE}
 ggplot(data = gapMinder,
        mapping = aes(x = continent)) +
   geom_bar()
