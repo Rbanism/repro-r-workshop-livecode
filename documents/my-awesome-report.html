@@ -475,6 +475,15 @@ gapMinder &lt;- read.delim(path)</code></pre>
 </tbody>
 </table>
 </div>
+<div id="inline-r-code" class="section level2">
+<h2>Inline R code</h2>
+<pre class="r"><code>cont &lt;- &quot;Europe&quot;
+mean_continent &lt;- gapMinder |&gt; 
+  group_by(continent) |&gt; 
+  summarise(mean_lifeExp = mean(lifeExp)) |&gt; 
+  filter(continent == cont)</code></pre>
+<p>The average life expectancy in Europe is Europe, 71.9036861</p>
+</div>
 </div>
 
 
