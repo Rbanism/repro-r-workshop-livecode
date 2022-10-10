@@ -51,7 +51,7 @@ df_grouped_2035 <- df |>
 
 
 ###### PRETTY PICTURES ######
-df_grouped_1950 |>
+plot <- df_grouped_1950 |>
   ggplot(aes(x = city_size,
              y = average_perc_population_in_city,
              fill = continent)) +
