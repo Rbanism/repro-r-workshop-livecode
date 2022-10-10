@@ -4,6 +4,19 @@ author: "Claudiu Forgaci"
 output: html_document
 ---
 
+```{r setup}
+# Load packages
+library(here)
+library(tidyverse)
+```
+
+```{r load-data}
+# Load data
+path <- here("data", "gapminderDataFiveYear.tsv")
+gapMinder <- read.delim(path)
+```
+
+
 # Heading
 
 ## Sub-heading
@@ -47,3 +60,10 @@ This paper uses the **tidyverse** package along with the *gapminder* dataset, wh
 ## Insert table
 
 The average GDP per capita grouped by `continent`.
+
+```{r}
+
+```
+
+
+
