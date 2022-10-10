@@ -89,8 +89,9 @@ df |>
              color=city_size)) +
   scale_color_viridis(discrete=TRUE, direction=-1) +
   geom_jitter(alpha = 0.1) +
-  facet_wrap("continent", ncol=3) +
-  geom_smooth(method="glm")
+  geom_smooth(method="glm") +
+  facet_wrap("continent", ncol=3)
+
 
 
 
