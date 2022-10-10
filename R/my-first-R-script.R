@@ -98,7 +98,8 @@ df |>
   ) +
   theme_minimal()
 
-
+plot_path <- here("results", "my_plot.png")
+ggsave(plot_path)
 
 
 
