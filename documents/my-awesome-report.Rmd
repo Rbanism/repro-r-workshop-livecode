@@ -16,7 +16,6 @@ path <- here("data", "gapminderDataFiveYear.tsv")
 gapMinder <- read.delim(path)
 ```
 
-
 # Heading
 
 ## Sub-heading
@@ -66,6 +65,3 @@ gapMinder |>
   group_by(continent) |> 
   summarise(mean_gdpPercap = mean(gdpPercap))
 ```
-
-
-
