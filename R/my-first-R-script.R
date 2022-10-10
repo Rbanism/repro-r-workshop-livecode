@@ -77,6 +77,9 @@ plot_2035 +
   labs(title = "Average percentage of population in cities in 2035")
 
 ##### Yet another pretty picture #####
-
+df |>
+  ggplot(aes(x = year,
+             y = percentage_of_population,
+             color = city_size)) 
 
 
