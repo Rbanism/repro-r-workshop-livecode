@@ -6,4 +6,5 @@ library(here)
 # "R/my-first-R-script.R"
 
 ####### LOADING DATA ####
+data_path <- here("data","urban_population.csv")
 
