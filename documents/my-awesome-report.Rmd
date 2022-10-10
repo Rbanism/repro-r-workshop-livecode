@@ -67,3 +67,16 @@ gapMinder |>
   knitr::kable(caption = "We can also add a caption",
                col.names = c("Continent", "Mean GDP per Capita"))
 ```
+
+## Inline R code
+
+```{r}
+cont <- "Europe"
+mean_continent <- gapMinder |> 
+  group_by(continent) |> 
+  summarise(mean_lifeExp = mean(lifeExp)) |> 
+  filter(continent == cont)
+```
+
+The average life expectancy in `r cont` is `r mean_continent`
+
