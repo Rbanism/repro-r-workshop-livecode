@@ -44,3 +44,9 @@ df_grouped_1950 <- df |>
   group_by(city_size, continent) |>
   summarise(average_perc_population_in_city = mean(percentage_of_population))
 
+df_grouped_2035 <- df |>
+  filter(year == 2035) |>
+  group_by(city_size, continent) |>
+  summarise(average_perc_population_in_city = mean(percentage_of_population))
+
+
