@@ -75,3 +75,8 @@ plot_2035 <- df_grouped_2035 |>
 plot_2035 +
   geom_col(position = position_dodge()) +
   labs(title = "Average percentage of population in cities in 2035")
+
+##### Yet another pretty picture #####
+
+
+
