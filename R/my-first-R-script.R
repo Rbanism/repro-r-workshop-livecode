@@ -51,7 +51,8 @@ df_grouped_2035 <- df |>
 
 
 ###### PRETTY PICTURES ######
-
+df_grouped_1950 |>
+  ggplot(aes())
 
 
 
