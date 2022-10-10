@@ -62,7 +62,9 @@ This paper uses the **tidyverse** package along with the *gapminder* dataset, wh
 The average GDP per capita grouped by `continent`.
 
 ```{r}
-
+gapMinder |> 
+  group_by(continent) |> 
+  summarise(mean_gdpPercap = mean(gdpPercap))
 ```
 
 
