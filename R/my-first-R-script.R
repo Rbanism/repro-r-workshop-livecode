@@ -35,4 +35,6 @@ df_newcol <- df |>
            year >= 2020 ~ "prediction")
          )
 
-
+df_grouped <- df |>
+  group_by(city_size) |>
+  summarise(count = n())
