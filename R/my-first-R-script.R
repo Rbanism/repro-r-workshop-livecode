@@ -62,7 +62,9 @@ plot_1950 +
 
 
 plot_1950 +
-  geom_col(position = position_dodge())
+  geom_col(position = position_dodge()) +
+  labs(title = "Average percentage of population in cities in 1950")
+
 
 
 plot_2035 <- df_grouped_2035 |>
@@ -71,4 +73,5 @@ plot_2035 <- df_grouped_2035 |>
              fill = continent))
 
 plot_2035 +
-  geom_col(position = position_dodge())
+  geom_col(position = position_dodge()) +
+  labs(title = "Average percentage of population in cities in 2035")
