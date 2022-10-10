@@ -81,7 +81,7 @@ df |>
   ggplot(aes(x = year,
              y = percentage_of_population,
              color = city_size)) +
-  geom_point()
+  geom_jitter(alpha = 0.3)
 
 
 
