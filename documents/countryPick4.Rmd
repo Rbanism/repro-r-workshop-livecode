@@ -1,6 +1,6 @@
 ---
 title: "Pick four - comparing trends in population  over time"
-output: html_document # other common outputs are pdf_document and word_document, but many more exist
+output: word_document # other common outputs are pdf_document and word_document, but many more exist
 ---
 
 ## Purpose
