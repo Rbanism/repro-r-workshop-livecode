@@ -80,6 +80,15 @@ plot_2035 +
 df |>
   ggplot(aes(x = year,
              y = percentage_of_population,
-             color = city_size)) 
+             color = city_size)) +
+  geom_point()
+
+
+
+
+
+
+
+
 
 
