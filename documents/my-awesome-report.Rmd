@@ -63,5 +63,7 @@ The average GDP per capita grouped by `continent`.
 ```{r}
 gapMinder |> 
   group_by(continent) |> 
-  summarise(mean_gdpPercap = mean(gdpPercap))
+  summarise(mean_gdpPercap = mean(gdpPercap)) |> 
+  knitr::kable(caption = "We can also add a caption",
+               col.names = c("Continent", "Mean GDP per Capita"))
 ```
