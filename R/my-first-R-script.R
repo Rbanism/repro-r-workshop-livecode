@@ -38,3 +38,9 @@ df_newcol <- df |>
 df_grouped <- df |>
   group_by(city_size, continent) |>
   summarise(average_perc_population_in_city = mean(percentage_of_population))
+
+df_grouped_1950 <- df |>
+  filter(year == 1950) |>
+  group_by(city_size, continent) |>
+  summarise(average_perc_population_in_city = mean(percentage_of_population))
+
