@@ -81,3 +81,10 @@ mean_continent
 
 The average life expectancy in `r cont` is `r round(mean_continent$mean_lifeExp, 2)`
 
+## Plots
+
+```{r}
+continents <- factor(gapMinder$continent)
+plot(continents)
+```
+
