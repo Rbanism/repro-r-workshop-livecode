@@ -36,5 +36,5 @@ df_newcol <- df |>
          )
 
 df_grouped <- df |>
-  group_by(city_size) |>
+  group_by(city_size, continent) |>
   summarise(average_perc_population_in_city = mean(percentage_of_population))
